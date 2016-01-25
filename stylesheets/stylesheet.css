@@ -34,6 +34,7 @@ body {
 .content-page {
     display: none;
     height: 100%;
+    margin-bottom: 100px;
 }
 .content-page.default, .content-page:target { /* Default MUST be the final child */
     display: block;
@@ -42,13 +43,19 @@ body {
     display: none;
 }
 
+.content-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* Top bar */
 .header {
     position: fixed;
     height: 140px;
-    width: inherit;
+    width: 60%;
     background: white;
     top: 0;
+    text-align: center;
 }
 .content {
     margin-top: 140px;
