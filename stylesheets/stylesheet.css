@@ -1,9 +1,11 @@
+/* Fonts */
 /* See: /fonts/SIL Open Font License.txt */
 @font-face {
     font-family: EBGaramond;
     src: url(../fonts/EBGaramond12-Regular.ttf);
 }
 
+/* Visible borders */
 .visible-border, .visible-border * {
     border: 1px solid grey;
 }
@@ -12,19 +14,8 @@
     left-margin: 10px;
 }
 
-.main-title {
-    font-size: 50pt;
-    display: flex;
-    flex-direction: row;
-}
-.main-title > span {
-    margin: auto;
-    flex-grow: 1;
-    flex-shrink: 1;
-    text-align: center;
-}
-
-html { min-height: 100%; }
+/* Page layout */
+html { min-height: 100%; box-sizing: border-box; }
 body {
     max-width: 60%;
     min-width 100px;
@@ -32,6 +23,8 @@ body {
     margin: auto;
     font-family: "Garamond", Serif;
     font-size: 14pt;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .content {
@@ -48,6 +41,41 @@ body {
 .content-page:target ~ .content-page {
     display: none;
 }
+
+/* Top bar */
+.header {
+    position: fixed;
+    height: 140px;
+    width: inherit;
+    background: white;
+    top: 0;
+}
+.content {
+    margin-top: 140px;
+}
+
+/* Title */
+.main-title {
+    font-size: 50pt;
+    display: flex;
+}
+.main-title > span {
+    margin: auto;
+    flex: 1;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+.navbar a {
+    flex: none;
+}
+
+
+/* Content */
 
 .content-section .title {
     font-variant: small-caps;
