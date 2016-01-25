@@ -1,0 +1,55 @@
+/* See: /fonts/SIL Open Font License.txt */
+@font-face {
+    font-family: EBGaramond;
+    src: url(../fonts/EBGaramond12-Regular.ttf);
+}
+
+.visible-border, .visible-border * {
+    border: 1px solid grey;
+}
+.top-blurb > div {
+    display: inline-block;
+    left-margin: 10px;
+}
+
+.main-title {
+    font-size: 50pt;
+    display: flex;
+    flex-direction: row;
+}
+.main-title > span {
+    margin: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: center;
+}
+
+html { min-height: 100%; }
+body {
+    max-width: 60%;
+    min-width 100px;
+    min-height: 100%;
+    margin: auto;
+    font-family: "Garamond", Serif;
+    font-size: 14pt;
+}
+
+.content {
+    height: 100%;
+}
+
+.content-page {
+    display: none;
+    height: 100%;
+}
+.content-page.default, .content-page:target { /* Default MUST be the final child */
+    display: block;
+}
+.content-page:target ~ .content-page {
+    display: none;
+}
+
+.content-section .title {
+    font-variant: small-caps;
+    font-size: 18pt;
+}
