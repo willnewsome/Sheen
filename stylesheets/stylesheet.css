@@ -15,6 +15,12 @@
     left-margin: 10px; */
     font-size: 24pt;
     color: white;
+    /*-webkit-text-stroke: 1px black;*/
+    text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
 }
 
 
@@ -27,7 +33,7 @@ body {
     margin: auto;
     font-family: "Garamond", Serif;
     font-size: 14pt;
-    color: darkslategrey;
+    color: black;
     box-sizing: border-box;
     position: relative;
     background: ivory;
@@ -38,6 +44,15 @@ body {
     max-width: 60%;
     margin:auto;
 }
+
+.content {
+    margin-top: 220px; /* Header width plus 20px margin */
+    /*border: 2px solid black;*/
+    border-bottom: 0px;
+    padding: 20px;
+    background: ivory;
+}
+
 .content-page {
     /*display: none;*/
     height: 100%;
@@ -64,19 +79,28 @@ body {
     width: 100%;
 
     background: coral;
+    /*background-image: url("../resources/top.png");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
     top: 0;
     left: 0;
     text-align: center;
-}
-.content {
-    margin-top: 260px; /* Header width plus 20px margin */
+    border-bottom: 2px solid black;
 }
 
 /* Title */
 .main-title {
     font-size: 100pt;
     color: black;
+    /*text-shadow:
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      2px 2px 0 #000;*/
     display: flex;
+    margin: auto;
+    width: 60%;
 }
 .main-title > span {
     margin: auto;
@@ -88,6 +112,8 @@ body {
 .navbar {
     display: flex;
     justify-content: space-around;
+    /*max-width: 800px;*/
+    margin: auto;
     margin-top: 20px;
     background: ivory; /*why is this necessary, it's in the header css, and navbar is in the header... */
     border-top: 2px solid black;
@@ -105,19 +131,32 @@ body {
 .content-section .title {
     /*font-variant: small-caps; */
     font-size: 18pt;
-    color: black;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .page-title {
     /*font-variant: small-caps; */
     font-size: 36pt;
-    color: black;
     text-align: center;
+    margin-top: 20px;
 }
 
 /* Footer */
 .footer {
     text-align: center;
+    margin-top: 40px;
     margin-bottom: 40px;
+    background: ivory;
+    max-width: 60%;
+    margin: auto;
+    padding: 20px;
+    /*border-left: 2px solid black;
+    border-right: 2px solid black;*/
+}
+
+.footer a {
+    text-decoration:none;
+    color: black;
+    font-size: 72px;
 }
