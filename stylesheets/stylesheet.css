@@ -8,11 +8,15 @@
 /* Visible borders */
 /*.visible-border, .visible-border * {
     border: 1px solid grey;
+} */
+
+.top-blurb {
+    /*display: inline-block;
+    left-margin: 10px; */
+    font-size: 24pt;
+    color: ivory;
 }
-.top-blurb > div {
-    display: inline-block;
-    left-margin: 10px;
-}*/
+
 
 /* Page layout */
 html { min-height: 100%; box-sizing: border-box; }
@@ -26,18 +30,22 @@ body {
     color: darkslategrey;
     box-sizing: border-box;
     position: relative;
+    background: ivory;
 }
 
 .content {
     height: 100%;
+    max-width: 60%;
+    margin:auto;
+}
+.content-page {
+    /*display: none;*/
+    height: 100%;
+    /*margin-bottom: 80px;*/
+    border-bottom: 1px solid darkslategrey;
 }
 
-.content-page {
-    display: none;
-    height: 100%;
-    margin-bottom: 80px;
-}
-.content-page.default, .content-page:target { /* Default MUST be the final child */
+/*.content-page.default, .content-page:target { */ /* Default MUST be the final child */ /*
     display: block;
 }
 .content-page:target ~ .content-page {
@@ -47,15 +55,17 @@ body {
 .content-section {
     margin-top: 20px;
     margin-bottom: 20px;
-}
+} */
 
 /* Top bar */
 .header {
     position: fixed;
-    height: 240px;
-    width: 60%;
-    background: white;
+    height: 220px;
+    width: 100%;
+
+    background: coral;
     top: 0;
+    left: 0;
     text-align: center;
 }
 .content {
@@ -67,7 +77,6 @@ body {
     font-size: 100pt;
     color: black;
     display: flex;
-    margin-bottom: 20px;
 }
 .main-title > span {
     margin: auto;
@@ -80,7 +89,8 @@ body {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-    background: white; /*why is this necessary, it's in the header css, and navbar is in the header... */
+    background: ivory; /*why is this necessary, it's in the header css, and navbar is in the header... */
+    border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
 .navbar a {
@@ -93,7 +103,21 @@ body {
 /* Content */
 
 .content-section .title {
-    font-variant: small-caps;
+    /*font-variant: small-caps; */
     font-size: 18pt;
     color: black;
+    margin-bottom: 20px;
+}
+
+.page-title {
+    /*font-variant: small-caps; */
+    font-size: 36pt;
+    color: black;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+
 }
