@@ -79,7 +79,7 @@ body {
     width: 100%;
 
     background: coral;
-    /*background-image: url("../resources/top.png");*/
+    background-image: url("../resources/top.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -92,12 +92,12 @@ body {
 /* Title */
 .main-title {
     font-size: 100pt;
-    color: black;
-    /*text-shadow:
+    color: white;
+    text-shadow:
       -2px -2px 0 #000,
       2px -2px 0 #000,
       -2px 2px 0 #000,
-      2px 2px 0 #000;*/
+      2px 2px 0 #000;
     display: flex;
     margin: auto;
     width: 60%;
